@@ -1,0 +1,21 @@
+# .prettierrc.yml
+
+# Use single quotes instead of double quotes
+singleQuote: true
+
+# Set the line width for wrapping lines
+printWidth: 80
+
+# Add a semicolon at the end of every statement
+semi: true
+
+# Use trailing commas where valid in ES5 (objects, arrays, etc.)
+trailingComma: "es5"
+
+# Include parentheses around a sole arrow function parameter
+arrowParens: "always"
+# .prettierrc or .prettierrc.yaml
+trailingComma: "es5"
+tabWidth: 2
+semi: false
+singleQuote: true
