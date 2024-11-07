@@ -1,5 +1,12 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Description
+
+This project is built using **Next.js** as the framework for server-side rendering and **Emotion** for CSS-in-JS styling. The combination provides a highly optimized and flexible development experience, allowing for efficient performance and dynamic styling.
+
+## Technologies Used
+
+- **Next.js** - A React framework for building fast, SEO-friendly applications with server-side rendering.
+- **Emotion** - A powerful CSS-in-JS library used for styling components, offering both `styled` and `css` props for flexible styling approaches.
+
 
 ## Getting Started
 
