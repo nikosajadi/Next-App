@@ -1,10 +1,16 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import React, { Children } from 'react';
+import React from 'react';
 
-export default function Button({children}: {childre: React.ReactNode}) {
+type ButtonProps = {
+  type?: 'button' | 'submit' | 'reset';
+  children: React.ReactNode;
+};
+
+export default function Button({ type = 'button', children }: ButtonProps) {
   return (
     <button
+      type={type}
       css={css`
         background-color: #1e90ff;
         color: white;
@@ -21,5 +27,3 @@ export default function Button({children}: {childre: React.ReactNode}) {
     </button>
   );
 }
-
-
