@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
+import React, { Children } from 'react';
 
-export default function Button() {
+export default function Button({children}: {childre: React.ReactNode}) {
   return (
     <button
       css={css`
@@ -16,7 +17,7 @@ export default function Button() {
         }
       `}
     >
-      Click Me
+      {children}
     </button>
   );
 }
