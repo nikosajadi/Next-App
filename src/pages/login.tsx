@@ -2,7 +2,7 @@
 import { css } from '@emotion/react';
 import LayoutAuth from './containers/LayoutAuth/LayoutAuth';
 import Header from './components/Header';
-import Button from './components/Button';
+import Button from './components/Button/Button';
 import Input from './components/Input/Input';
 
 export default function Login() {

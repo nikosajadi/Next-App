@@ -1,13 +1,12 @@
-
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import Input from '../Input/Input';
 
-type InputEmailProps = {
+type InputTextAreaProps = {
   placeholder?: string;
 };
 
-export default function InputEmail({ placeholder }: InputEmailProps) {
+export default function InputTextArea({ placeholder }: InputTextAreaProps) {
   return (
     <div
       css={css`
@@ -15,7 +14,7 @@ export default function InputEmail({ placeholder }: InputEmailProps) {
         margin-bottom: 1rem;
       `}
     >
-      <Input type="email" placeholder={placeholder} />
+      <Input type="text" placeholder={placeholder} />
     </div>
   );
 }
