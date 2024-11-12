@@ -2,10 +2,13 @@
 import { css } from '@emotion/react';
 import LayoutAuth from './containers/LayoutAuth/LayoutAuth';
 import Header from './components/Header';
-import Button from './components/Button/Button';
-import Input from './components/Input/Input';
+import { InputEmail,InputPassword,Button } from './components';
 
 export default function Login() {
+  const handleSubmit =(event)=> {
+    if(event) event.preventDefault();
+    console.log('handleSubmit')
+  }
   return(
     <div>
     <Header>
@@ -14,10 +17,10 @@ export default function Login() {
     </Header>
     <LayoutAuth>
       <>
-      <form>
-      <Input type='text' placeholder='email' />
-      <input type='text' placeholder='Password'></input>
-      <Button>Submit</Button>
+      <form onSubmit={handleSubmit}>
+      <InputEmail  placeholder="email" />
+      <InputPassword  placeholder='Password' />
+      <Button type='submit'>Submit</Button>
       </form>
       </>
     </LayoutAuth>
