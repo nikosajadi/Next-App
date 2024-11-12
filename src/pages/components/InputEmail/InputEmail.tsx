@@ -7,14 +7,9 @@ type InputEmailProps = {
   placeholder?: string;
 };
 
-export default function InputEmail({ placeholder }: InputEmailProps) {
+export default function InputEmail({ placeholder = 'Enter your email' }: InputEmailProps) {
   return (
-    <div
-      css={css`
-        width: 100%;
-        margin-bottom: 1rem;
-      `}
-    >
+    <div css={css`width: 100%; margin-bottom: 1rem;`}>
       <Input type="email" placeholder={placeholder} />
     </div>
   );
