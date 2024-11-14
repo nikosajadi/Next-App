@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
+import { css, useTheme } from '@emotion/react';
 import React from 'react';
 
 type ButtonProps = {
@@ -8,11 +8,13 @@ type ButtonProps = {
 };
 
 export default function Button({ type = 'button', children }: ButtonProps) {
+  const theme = useTheme(); // Correctly use the useTheme() hook to access the theme
+
   return (
     <button
       type={type}
       css={css`
-        background-color: #1e90ff;
+        background-color: ${theme.secondary}; // Correctly accessing theme value
         color: white;
         padding: 10px 20px;
         border: none;
