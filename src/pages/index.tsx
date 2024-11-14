@@ -1,9 +1,8 @@
 
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import Button from './components/Button/Button';
-import LayoutAuth from './containers/LayoutAuth/LayoutAuth';
-import Header from './components/Header';
+import LayoutAuth from '../containers/LayoutAuth/LayoutAuth';
+import Header from '../components/Header';
 import Login from './login';
 
 

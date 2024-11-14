@@ -1,11 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import LayoutAuth from './containers/LayoutAuth/LayoutAuth';
-import Header from './components/Header';
-import { InputEmail,InputPassword,Button } from './components';
+import LayoutAuth from '../containers/LayoutAuth/LayoutAuth';
+import Header from '../components/Header';
+import { InputEmail,InputPassword,Button } from '../components';
 
 export default function Login() {
-  const handleSubmit =(event)=> {
+  const handleSubmit =(event: { preventDefault: () => void; })=> {
     if(event) event.preventDefault();
     console.log('handleSubmit')
   }
