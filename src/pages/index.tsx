@@ -11,7 +11,7 @@ export default function Home() {
 
     <LayoutAuth>
     <>
-      <h1>Hello</h1>
+      
       <Login />
     </>
     </LayoutAuth>

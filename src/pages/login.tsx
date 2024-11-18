@@ -4,6 +4,8 @@ import React from 'react';
 import Head from 'next/head';
 import LayoutAuth from '../containers/LayoutAuth/LayoutAuth';
 import { InputEmail, InputPassword, Button } from '../components';
+import H2 from '@/components/Typography/H2';
+
 
 export default function Login() {
   const handleSubmit = (event: React.FormEvent) => {
@@ -12,18 +14,25 @@ export default function Login() {
   };
 
   return (
-    <>
+    <div>
       <Head>
         <title>Login</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <LayoutAuth>
+      <H2 align='center'> Your favorite Online Job</H2>
         <form onSubmit={handleSubmit}>
-          <InputEmail placeholder="email" />
-          <InputPassword placeholder="Password" />
-          <Button type="submit">Submit</Button>
+        
+            <InputEmail placeholder="email" />
+        
+          
+            <InputPassword placeholder="Password" />
+         
+         
+            <Button type="submit">Submit</Button>
+          
         </form>
       </LayoutAuth>
-    </>
+    </div>
   );
 }

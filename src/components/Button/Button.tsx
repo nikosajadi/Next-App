@@ -14,7 +14,7 @@ export default function Button({ type = 'button', children }: ButtonProps) {
     <button
       type={type}
       css={css`
-        background-color: ${theme.secondary}; // Correctly accessing theme value
+        background-color: ${theme.tertiary}; // Correctly accessing theme value
         color: white;
         padding: 10px 20px;
         border: none;

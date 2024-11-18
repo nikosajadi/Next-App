@@ -18,7 +18,7 @@ export default function LayoutAuth({ children }: LayoutAuthProps) {
         text-align: center;
       `}
     >
-      <h1>Next Project</h1>
+      
     <div>{children}</div>  
     </div>
   );

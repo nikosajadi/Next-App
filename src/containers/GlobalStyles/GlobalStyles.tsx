@@ -35,6 +35,9 @@ export default function GlobalStyles() {
 
         body {
           line-height: 1;
+          font-size: 16px;
+          font-weight: 400;
+          color: #333;
         }
 
         ol, ul {
