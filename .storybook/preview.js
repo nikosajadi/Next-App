@@ -1,6 +1,6 @@
-import { css, jsx } from '@emotion/react'; // Emotion imports
-import { ThemeProvider } from '@emotion/react'; // Use Emotion's modern ThemeProvider
-import theme from '../configs/theme';
+import { css, jsx } from '@emotion/react'; 
+import { ThemeProvider } from '@emotion/react'; 
+import theme from '../src/configs/theme';
 
 
 export const decorators = [
@@ -26,4 +26,6 @@ export const parameters = {
     autodocs: true, // Enable autodocs for your stories
   },
 };
+
+export const tags = ['autodocs'];
 
