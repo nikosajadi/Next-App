@@ -1,27 +1,41 @@
-/** @jsxImportSource @emotion/react */
-import { css, useTheme } from '@emotion/react';
-import React from 'react';
-
 type ButtonProps = {
   type?: 'button' | 'submit' | 'reset';
   children: React.ReactNode;
+  widthAll?: boolean; // Add this property
+  buttonType?: keyof typeof theme.colors; // Add this property
 };
 
-export default function Button({ type = 'button', children }: ButtonProps) {
-  const theme = useTheme(); // Correctly use the useTheme() hook to access the theme
+export default function Button({
+  type = 'button',
+  children,
+  widthAll = false, // Default value
+  buttonType = 'primary', // Default value
+}: ButtonProps) {
+  const theme = useTheme();
 
   return (
     <button
       type={type}
       css={css`
-        background-color: ${theme.tertiary}; // Correctly accessing theme value
+        width: ${widthAll ? '100%' : 'auto'};
+        background-color: ${theme.colors[buttonType]};
         color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
+        font-size: ${theme.typography.paragraph};
+        text-decoration: none;
+        padding: 16px 24px;
+        border: ${theme.border[1]};
+        border-radius: ${theme.borderRadius[1]};
+        display: inline-block;
+        position: relative;
         cursor: pointer;
+        transition-duration: 0.4s;
         &:hover {
-          background-color: #007acc;
+          box-shadow: ${theme.boxShadow.light};
+          background-color: ${theme.colors.secondary};
+        }
+        &:disabled {
+          background-color: ${theme.colors.backgroundColorSecondary};
+          cursor: no-drop;
         }
       `}
     >

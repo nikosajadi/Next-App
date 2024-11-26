@@ -1,7 +1,14 @@
 import React from 'react';
 import Button from './Button';
 
-export default { title: 'Button' };
+export default {
+  title: 'Button',
+  component: Button,
+};
 
-export const Simple = () => <Button>Click me</Button>;
-export const SimpleWithAll = () => <Button>Click me</Button>; // Adjust the props as necessary
+export const Simple = () => <Button buttonType="primary">Click me</Button>;
+export const SimpleWithAll = () => (
+  <Button buttonType="secondary" widthAll>
+    Click me
+  </Button>
+);
